@@ -1,0 +1,10 @@
+{
+    "name": "Movie Extension",
+    "description": "Finds movie details, based off of highlighted text",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "movie_extension.html",
+        "default_icon": "movie_extension.png"
+    }
+}
