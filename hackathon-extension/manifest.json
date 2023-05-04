@@ -6,5 +6,17 @@
     "action": {
         "default_popup": "movie_extension.html",
         "default_icon": "movie_extension.png"
-    }
+    },
+    "permissions": [
+        "activeTab", "scripting", "contextMenus", "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["main.js"]
+        }
+    ],
+    "background": {
+            "service_worker": "background.js"
+        }
 }
